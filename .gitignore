@@ -1,0 +1,31 @@
+# Compiled binaries / executables
+*.exe
+*.out
+a.out
+lexer
+parser
+*.o
+*.obj
+
+# Flex / Bison generated sources
+lex.yy.c
+y.tab.c
+y.tab.h
+*.tab.c
+*.tab.h
+lex.backup
+
+# Assignment 3 ships its generated lexer as part of the submission
+!230101038_Assignment3/lex.yy.c
+
+# Assembler / linker artifacts
+*.lst
+*.map
+
+# Editor / OS noise
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+Desktop.ini
+.DS_Store

@@ -1,0 +1,18 @@
+# Normalise to LF in the repository so `make` works on Linux graders/CI
+* text=auto eol=lf
+
+# Explicitly LF — CRLF breaks these
+Makefile   text eol=lf
+*.l        text eol=lf
+*.y        text eol=lf
+*.c        text eol=lf
+*.h        text eol=lf
+*.asm      text eol=lf
+*.nc       text eol=lf
+*.md       text eol=lf
+*.txt      text eol=lf
+
+# Never touch binaries
+*.exe      binary
+*.o        binary
+*.out      binary

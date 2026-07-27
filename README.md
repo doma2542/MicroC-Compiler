@@ -31,7 +31,7 @@ x86-64 NASM programs linked against the C library.
 nasm -f elf64 230101038_seta.asm -o seta.o
 gcc seta.o -o seta -no-pie
 ./seta
-\`\`\`
+```
 
 ---
 
@@ -39,13 +39,13 @@ gcc seta.o -o seta -no-pie
 
 | File | Description |
 | :--- | :--- |
-| \`230101038_onepass.c\` | One-pass assembler with forward-reference backpatching |
-| \`230101038_twopass.c\` | Two-pass assembler with a separate symbol-resolution pass |
+| `230101038_onepass.c` | One-pass assembler with forward-reference backpatching |
+| `230101038_twopass.c` | Two-pass assembler with a separate symbol-resolution pass |
 
-\`\`\`bash
+```bash
 gcc 230101038_onepass.c -o onepass && ./onepass
 gcc 230101038_twopass.c -o twopass && ./twopass
-\`\`\`
+```
 
 ---
 
@@ -53,12 +53,12 @@ gcc 230101038_twopass.c -o twopass && ./twopass
 
 A Flex specification recognising all nanoC keywords, identifiers, constants, string literals, punctuators and comments. Emits a token stream and a symbol table.
 
-\`\`\`bash
+```bash
 cd 230101038_Assignment3
 make          # compile the lexer
 make run      # run on the test file and print outputs
 make clean    # remove generated files
-\`\`\`
+```
 
 *See the assignment README for the full lexical rule set and output formats.*
 
@@ -68,12 +68,12 @@ make clean    # remove generated files
 
 A Bison/YACC grammar for nanoC, including optional-non-terminal expansion and dangling-else resolution via precedence.
 
-\`\`\`bash
+```bash
 cd 230101038_Assignment4
 make          # build the parser (flex, yacc, gcc)
 make run      # parse the test file
 make clean    # remove generated files
-\`\`\`
+```
 
 *See the assignment README for the grammar adaptations and test coverage.*
 
@@ -81,13 +81,12 @@ make clean    # remove generated files
 
 ## Build Requirements
 
-- \`nasm\` and \`gcc\` (Assignment 1)
-- \`gcc\` (Assignment 2)
-- \`flex\` (Assignment 3)
-- \`flex\` and \`bison\`/\`yacc\` (Assignment 4)
+- `nasm` and `gcc` (Assignment 1)
+- `gcc` (Assignment 2)
+- `flex` (Assignment 3)
+- `flex` and `bison`/`yacc` (Assignment 4)
 
 **On Debian/Ubuntu:**
-\`\`\`bash
+```bash
 sudo apt install nasm gcc flex bison make
-\`\`\`
-"@
+```
